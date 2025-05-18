@@ -1,103 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dr. rer. nat. Amir Raoofy</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f4f4f9;
-      color: #333;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fafb;
+      color: #1f2937;
     }
-    h1, h2, h3 {
-      color: #1a237e;
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
-    .section {
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 80px 20px;
+      background-image: url('./img.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      position: relative;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+      z-index: 0;
+      border-radius: 12px;
+    }
+
+    header * {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .social-links {
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: #bfdbfe;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #ffffff;
+    }
+
+    section {
       margin-bottom: 40px;
     }
-    .contact, .address {
-      white-space: pre-line;
+
+    h2 {
+      color: #1d4ed8;
+      border-bottom: 2px solid #dbeafe;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
     }
+
+    h3 {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #374151;
+    }
+
     ul {
-      list-style-type: disc;
       padding-left: 20px;
     }
+
     li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
+
     .publication {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #e5e7eb;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #4b5563;
     }
   </style>
 </head>
+
 <body>
-  <h1>Dr. rer. nat. Amir Raoofy</h1>
-  <p><strong>Researcher at:</strong> LRZ Future Computing</p>
+  <div class="container">
+    <header>
+      <h1>Amir Raoofy</h1>
+      <p><strong>Researcher at LRZ Future Computing</strong></p>
+      <div class="social-links">
+        <a href="linkedin.com/in/amir-raoofy-64156753" target="_blank">LinkedIn</a>
+        <a href="https://github.com/amir-raoofy" target="_blank">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=Sy74KZ4AAAAJ&hl=en" target="_blank">Google Scholar</a>
+      </div>
+    </header>
 
-  <div class="section address">
-    <h2>Address</h2>
-    Room I.1.030<br>
-    Boltzmannstr. 1<br>
-    85748 Garching b. München
-  </div>
+    <section>
+      <h2>Research Interests</h2>
+      <ul>
+        <li>System Software and System Programming</li>
+        <li>High Performance and Smart Networks in HPC</li>
+        <li>Programming and Usage Models</li>
+        <li>Analysis of large datasets on HPC systems</li>
+        <li>Machine Learning and Data Mining on HPC systems</li>
+          <li>Data mining on using HPC systems</li>
+        <li>Parallelization and code optimization on accelerators and multi-core HPC systems</li>
+      </ul>
+    </section>
 
-  <div class="section contact">
-    <h2>Contact</h2>
-    Email: <a href="mailto:amir.raoofy@lrz.de">amir.raoofy@lrz.de</a><br>
-    Tel.: +49 (89) 35831 - 8871
-  </div>
+    <section>
+      <h2>Job</h2>
+      <h3>Researcher in Future Computing Group at Leibniz Supercomputing Centre</h3>
+      <ul>
+        <li>Focus on HPC programming models, monitoring, and introspection tools</li>
+        <li>Architectural evaluations and Co-Design for future HPC systems</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Programming and Usage Models</li>
-      <li>System Software and Programming</li>
-      <li>Analysis of large datasets on HPC systems</li>
-      <li>Machine Learning and Data Mining on HPC systems</li>
-      <li>Time-series analysis on industrial datasets using HPC systems</li>
-      <li>Parallelization and code optimization on accelerators and multi-core HPC systems</li>
-      <li>Porting applications to HPC systems</li>
-    </ul>
-  </div>
+    <section>
+      <h2>Education</h2>
+      <h3>PhD in Computer Science (2024)</h3>
+      <p>Chair of Computer Architecture and Parallel Systems, Technical University of Munich</p>
+      <ul>
+        <li>Thesis: Time Series Mining on High Performance Computing Systems (2024 - Supervisor: Prof. Dr. Martin Schulz)</li>
+      </ul>
+      <h3>Master of Science in Computational Science and Engineering</h3>
+      <ul>
+        <li>Thesis: Semi-Implicit Solver for Over-land Flows on HPC Systems (2017 - Supervisor: Prof. Dr. Hans-Joachim Bungartz)</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>DEEP-SEA</strong>: <a href="https://www.deep-projects.eu" target="_blank">www.deep-projects.eu</a></li>
-      <li><strong>MLAB</strong>: In collaboration with Airbus Defence and Space GmbH, TUM, and Orora Technologies GmbH.</li>
-      <li><strong>SensE</strong>: Funded by Bayerische Forschungsstiftung, with IfTA Ingenieurbüro für Thermoakustik GmbH.</li>
-      <li><strong>TurbO</strong>: Funded by Bayerische Forschungsstiftung with IfTA GmbH.</li>
-      <li><strong>LULESH to LAIK</strong>: Porting LULESH to LAIK for parallel applications.</li>
-    </ul>
-  </div>
+    <section>
+      <h2>Core Organization member in Various ACM/IEEE Conferences and Workshops</h2>
+      <ul>
+        <li>Computing Frontiers (Web & Proceedings Chair) <a href="https://www.computingfrontiers.org/2025/orga.html" target="_blank">Link</a></li>
+        <li>IPDPS HIPS Workshop Chair <a href="https://hips2025.github.io/" target="_blank">Link</a></li>
+        <li>VI-HPS Tuning Workshop Lecturer <a href="https://www.vi-hps.org/training/tws/tw45.html" target="_blank">Link</a></li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Teaching</h2>
-    <ul>
-      <li>WS 22/23: Praktikum - Evaluation of Modern HPC-Architectures and - Accelerators</li>
-      <li>WS 21/22: Praktikum - Evaluation of Modern HPC-Architectures and - Accelerators</li>
-      <li>SS 21: Praktikum - Evaluation of Modern HPC-Architectures and - Accelerators</li>
-      <li>SS 20: Seminar - Cloud Computing: Internet of Things Technologies</li>
-      <li>SS 19: Seminar - Geschichte der Rechnerarchitektur</li>
-      <li>WS 18/19: Praktikum - Advanced Topics in Computer Architecture and Parallel Systems</li>
-      <li>SS 18: Lecture - Parallel Programming (Central Tutorial)</li>
-    </ul>
-  </div>
+    <section>
+      <h2>Technical Programm Committee and Reviewer for Various ACM/IEEE Conferences and Workshops</h2>
+      <ul>
+        <li>EuroPar, Computing Frontiers (CF), ISC, IWOCL, ICCS, ICCD, SC, etc</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Publications</h2>
-    <div class="publication">Amir Raoofy et al., Overcoming Weak Scaling Challenges..., ISC 2023.</div>
-    <div class="publication">Yi Ju et al., Exploiting Reduced Precision..., IPDPS 2022.</div>
-    <div class="publication">Max Ghiglione et al., Machine Learning Application..., OBDP 2021.</div>
-    <div class="publication">Amir Raoofy et al., Benchmarking Machine Learning Inference..., MLBench 2021.</div>
-    <div class="publication">Roman Karlstetter et al., Efficient Handling of Large Scale Sensor Data, CCGrid 2021.</div>
-    <div class="publication">Amir Raoofy et al., Time Series Mining at Petascale Performance, ISC 2020.</div>
-    <div class="publication">Karlstetter et al., Turning dynamic sensor measurements..., ASME Turbo-Expo 2019.</div>
-    <div class="publication">Raoofy et al., Enabling Malleability for LULESH using LAIK, PARS Workshop 2019.</div>
-    <div class="publication">Yang et al., Hardening the Linux Kernel against Soft Errors, Radiation School Poster.</div>
-    <div class="publication">Bakhtiari et al., AMR algorithm for advection-diffusion, SC '16.</div>
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>DEEP-SEA</strong>: EU-wide project <a href="https://www.deep-projects.eu" target="_blank">link</a></li>
+        <li><strong>MLAB</strong>: collaboration with Airbus, TUM, Orora Technologies sponsored by ESA, <a href=https://www.bgd.ed.tum.de/en/projects/mlab/ target="_blank">link</a></li>
+        <li><strong>TurbO and SensE</strong>: collaboration with IfTA GmbH sponsored by Bayerische Forschungsstiftung <a href=https://www.ce.cit.tum.de/caps/abgeschlossene-projekte/ target="_blank">link</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Teaching</h2>
+      <ul>
+        <li>Practical Course: Experimental Evaluation and Characterization of Quantum Computing Systems (WS24/25)</li>
+        <li>Practical Course Experimental Evaluation of Modern Computing Systems and Accelerators (SS25, WS23/24, SS23, WS22/23, WS21/22, WS20/21)</li>
+        <li>Seminar: Cloud Computing: Internet of Things Technologies (SS20)</li>
+        <li>Seminar: History of Computer Architecture (SS19)</li>
+        <li>Practical Course: Advanced Topics in Computer Architecture and Parallel Systems (WS18/19)</li>
+      </ul>
+    </section>
+
+
+    <section>
+      <h2>Research Papers and Talks at Various ACM/IEEE Conferences and Venues</h2>
+      <ul>
+        <li>IPDPS, Supercomputing (SC), ISC, Computing Frontiers (CF), ScalPerf, MLSys, OBDP, HIPS, ICPE, etc</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Publications (Selected)</h2>
+      <div class="publication">Progressing Non-blocking Two-Sided Communication Using BlueField DPUs, ARCS'25</div>
+      <div class="publication">AutoBench: Platform for Automated HPC Benchmarking, ICPE'25</div>
+      <div class="publication">Comparing GPU Performance Profiles, CF'24</div>
+      <div class="publication">Phase-aware System-Side Sampling for HPC, CF'23</div>
+      <div class="publication">MPI Communication Dynamics Simulation with SimGrid, PARS'25</div>
+      <div class="publication">Reduced Precision for Time Series Mining on GPUs, IPDPS'22</div>
+      <div class="publication">ML Inference in FPGA-based Space Applications, MLBench'21</div>
+      <div class="publication">Time Series Mining at Petascale, ISC'20 (Hans Meuer Best Paper Award)</div>
+      <div class="publication">Malleability for LULESH with LAIK, PARS'19</div>
+    </section>
+
+    <div class="section">
+        <h2>Student Supervision</h2>
+        <ul>
+            <li>Contribution to the supervision of around 30+ Bachelor and Master student theses</li>
+        </ul>
+    </div>
+
+    <footer>
+      <p>Contact: <a href="mailto:amir.raoofy@lrz.de">amir.raoofy@lrz.de</a> | Tel.: +49 (89) 35831 - 8871</p>
+      <p>Room I.1.030, Boltzmannstr. 1, 85748 Garching b. München</p>
+    </footer>
+
   </div>
 </body>
+
 </html>
+<!-- End of HTML document -->
